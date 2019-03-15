@@ -19,15 +19,18 @@ class MyApp extends StatelessWidget {
           elevation: 0.0,
           backgroundColor: const Color(ProjectConfig.bgColor),
           leading: Builder(
-              builder: (BuildContext context) {
-                return IconButton(
-                  onPressed: null,
-                  icon: const Icon(
-                    Icons.arrow_back,
-                    color: Colors.black87,
-                  )
-                );
-              }
+            builder: (BuildContext context) {
+              return Container(
+                margin: EdgeInsets.only(left: 40.0),
+                  child: IconButton(
+                      onPressed: null,
+                      icon: const Icon(
+                          Icons.arrow_back,
+                          color: Colors.black87
+                      )
+                  ),
+              );
+            }
           ),
         ),
         body: Stack(
