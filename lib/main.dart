@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'project_config.dart';
 import 'header.dart';
+import 'shoes_item_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,10 +15,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey
       ),
       home: Scaffold(
-        backgroundColor: const Color(ProjectConfig.bgColor),
+        backgroundColor: const Color(ProjectConfig.clBg),
         appBar: AppBar(
           elevation: 0.0,
-          backgroundColor: const Color(ProjectConfig.bgColor),
+          backgroundColor: const Color(ProjectConfig.clBg),
           leading: Builder(
             builder: (BuildContext context) {
               return Container(
@@ -35,7 +36,8 @@ class MyApp extends StatelessWidget {
         ),
         body: Stack(
           children: <Widget>[
-            Header()
+            ShoesItemList(),
+            Header(),
           ],
         )
       )

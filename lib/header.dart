@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'project_config.dart';
 
 class Header extends StatelessWidget{
 
@@ -12,7 +13,7 @@ class Header extends StatelessWidget{
           "Porsche Design",
           style: TextStyle(
             fontWeight: FontWeight.w700,
-            fontSize: 28.0,
+            fontSize: 27.0,
             color: Colors.black87
           ),
         ),
@@ -36,8 +37,42 @@ class Header extends StatelessWidget{
     );
 
     final buttom =  Center(
-      child: InkWell(
-        child: Icon(Icons.favorite_border),
+      child: Stack(
+        alignment: AlignmentDirectional(1.2, -1.7),
+        children: <Widget>[
+          Container(
+            width: 50.0,
+            height: 50.0,
+            decoration: BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle
+            ),
+            child: InkWell(
+              child: Icon(
+                Icons.favorite_border,
+                size: 22.0,
+                color: const Color(ProjectConfig.clBlue),
+              ),
+            ),
+          ),
+
+          Container(
+            width: 23.0,
+            height: 23.0,
+            alignment: Alignment(0.0, 0.0),
+            decoration: BoxDecoration(
+              color: const Color(ProjectConfig.clBlue),
+              shape: BoxShape.circle
+            ),
+            child: Text(
+                2.toString(),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 13.0
+              ),
+            ),
+          )
+        ],
       ),
     );
 
@@ -46,12 +81,12 @@ class Header extends StatelessWidget{
         width: double.infinity,
         padding: EdgeInsets.only(
           top: 20.0,
-          right: 45.0,
-          bottom: 15.0,
-          left: 45.0
+          right: 50.0,
+          bottom: 20.0,
+          left: 50.0
         ),
         decoration: BoxDecoration(
-          border: Border(bottom: BorderSide(color: Colors.red, width: 1.0))
+          color: const Color(ProjectConfig.clBg)
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
