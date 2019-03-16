@@ -11,27 +11,27 @@ class StarsGenerator extends StatelessWidget {
     Widget buildStar(int index) {
       if (index >= dataStars) {
         return Container(
-          margin: EdgeInsets.only(right: 3.0),
+          margin: EdgeInsets.only(right: 2.0),
           child: Icon(
             Icons.star,
-            color: Colors.black45,
-            size: 15.0,
+            color: Colors.black38,
+            size: 13.0,
           ));
       } else if (index > dataStars - 1 && index < dataStars) {
         return Container(
-          margin: EdgeInsets.only(right: 3.0),
+          margin: EdgeInsets.only(right: 2.0),
           child: Icon(
             Icons.star_half,
-            color: Colors.black45,
-            size: 15.0,
+            color: Colors.black38,
+            size: 13.0,
           ));
       } else {
         return Container(
-          margin: EdgeInsets.only(right: 3.0),
+          margin: EdgeInsets.only(right: 2.0),
           child: Icon(
             Icons.star,
             color: Colors.black87,
-            size: 15.0,
+            size: 13.0,
           ));
       }
     }

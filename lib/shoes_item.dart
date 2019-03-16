@@ -22,16 +22,54 @@ class ShoesItem extends StatelessWidget{
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             Stack(
+              alignment: Alignment.topLeft,
+              overflow: Overflow.visible,
               children: <Widget>[
                 Container(
+                  alignment: Alignment.center,
                   margin: EdgeInsets.symmetric(vertical: 30.0),
                   width: 200.0,
                   height: 220.0,
                   decoration: BoxDecoration(
                     color: Color(dataColor),
-                    borderRadius: BorderRadius.all(Radius.circular(50.0))
+                    borderRadius: BorderRadius.all(Radius.circular(70.0))
                   ),
-                )
+                ),
+
+                Positioned(
+                  right: -60.0,
+                  top: -10.0,
+                  child: Container(
+                    width: 250.0,
+                    height: 250.0,
+                    alignment: Alignment.topRight,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(imagePath),
+                        fit: BoxFit.contain
+                      )
+                    ),
+                  ),
+                ),
+
+                Positioned(
+                  top: 28.0,
+                  child: Container(
+                    width: 45.0,
+                    height: 45.0,
+                    alignment: Alignment.topLeft,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(15.0))
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.add,
+                        color: Colors.black87,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
 
@@ -43,12 +81,12 @@ class ShoesItem extends StatelessWidget{
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Container(
-                    margin: EdgeInsets.only(bottom: 15.0),
+                    margin: EdgeInsets.only(bottom: 10.0),
                     child: Text(
                       "\$$dataPrice",
                       style: TextStyle(
                         color: Colors.black87,
-                        fontSize: 50.0,
+                        fontSize: 42.0,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
@@ -57,10 +95,10 @@ class ShoesItem extends StatelessWidget{
                   Container(
                     margin: EdgeInsets.only(bottom: 7.0),
                     child: Text(
-                      "Review:",
+                      "Review :",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontSize: 16.0,
+                          fontSize: 15.0,
                           fontWeight: FontWeight.w700
                       ),
                     ),

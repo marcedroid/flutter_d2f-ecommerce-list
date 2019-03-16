@@ -14,11 +14,11 @@ class ShoesItemList extends StatelessWidget{
       child: ListView(
         scrollDirection: Axis.vertical,
         children: <Widget>[
-          ShoesItem(ProjectConfig.clPurple,"assets/images/z-1.png", 5, 84),
-          ShoesItem(ProjectConfig.clPink,"assets/images/z-2.png", 3, 78),
-          ShoesItem(ProjectConfig.clWine,"assets/images/z-3.png", 5, 67),
+          ShoesItem(ProjectConfig.clPurple,"assets/images/z-2.png", 4, 84),
+          ShoesItem(ProjectConfig.clPink,"assets/images/z-5.png", 5, 78),
+          ShoesItem(ProjectConfig.clWine,"assets/images/z-1.png", 3, 67),
           ShoesItem(ProjectConfig.clOrange,"assets/images/z-4.png", 4, 93),
-          ShoesItem(ProjectConfig.clGreen,"assets/images/z-5.png", 5, 80),
+          ShoesItem(ProjectConfig.clGreen,"assets/images/z-3.png", 5, 80),
         ],
       ),
     );
