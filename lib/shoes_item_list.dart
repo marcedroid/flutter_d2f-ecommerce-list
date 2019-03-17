@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'shoes_item.dart';
 import 'project_config.dart';
+import 'header.dart';
 
 class ShoesItemList extends StatelessWidget{
 
@@ -8,12 +9,10 @@ class ShoesItemList extends StatelessWidget{
   Widget build(BuildContext context) {
 
     final render = Container(
-      margin: EdgeInsets.only(
-        top: 125.0
-      ),
       child: ListView(
         scrollDirection: Axis.vertical,
         children: <Widget>[
+          Header(),
           ShoesItem(ProjectConfig.clPurple,"assets/images/z-2.png", 4, 84),
           ShoesItem(ProjectConfig.clPink,"assets/images/z-5.png", 5, 78),
           ShoesItem(ProjectConfig.clWine,"assets/images/z-1.png", 3, 67),

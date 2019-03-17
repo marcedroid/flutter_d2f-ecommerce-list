@@ -37,11 +37,11 @@ class ShoesItem extends StatelessWidget{
                 ),
 
                 Positioned(
-                  right: -60.0,
-                  top: -10.0,
+                  right: -70.0,
+                  top: -25.0,
                   child: Container(
-                    width: 250.0,
-                    height: 250.0,
+                    width: 260.0,
+                    height: 260.0,
                     alignment: Alignment.topRight,
                     decoration: BoxDecoration(
                       image: DecorationImage(

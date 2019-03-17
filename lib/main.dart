@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'project_config.dart';
-import 'header.dart';
 import 'shoes_item_list.dart';
 
 void main() => runApp(MyApp());
@@ -34,12 +33,7 @@ class MyApp extends StatelessWidget {
             }
           ),
         ),
-        body: Stack(
-          children: <Widget>[
-            ShoesItemList(),
-            Header(),
-          ],
-        )
+        body: ShoesItemList()
       )
     );
   }
